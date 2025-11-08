@@ -9,13 +9,8 @@ public abstract class Animal {
         animalCount++;
     }
 
-    public void run(int distance) {
-        System.out.println(name + " пробежал " + distance + " м.");
-    }
-
-    public void swim(int distance) {
-        System.out.println(name + " проплыл " + distance + " м.");
-    }
+    public abstract void run(int distance);
+    public abstract void swim(int distance);
 
     public static int getAnimalCount() {
         return animalCount;
@@ -24,4 +19,4 @@ public abstract class Animal {
     public String getName() {
         return name;
     }
-}
+}}
