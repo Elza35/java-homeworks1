@@ -1,4 +1,4 @@
-package org.example;
+package org.example.app;;
 
 public class GeometryApp {
     public static void main(String[] args) {

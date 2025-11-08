@@ -1,5 +1,4 @@
-package org.example;
-
+package org.example.geometry;
 public interface Figure {
     // Основные методы
     double calculateArea();

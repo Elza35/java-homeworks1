@@ -1,4 +1,12 @@
-package org.example;
+package org.example.app;
+import org.example.animals.Animal;
+import org.example.animals.Cat;
+import org.example.animals.Dog;
+import org.example.animals.Bowl;
+import org.example.geometry.Circle;
+import org.example.geometry.Figure;
+import org.example.geometry.Rectangle;
+import org.example.geometry.Triangle;
 
 public class HomeWork4 {
     public static void main(String[] args) {

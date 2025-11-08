@@ -1,4 +1,4 @@
-package org.example;
+package org.example.animals;
 
 public class Bowl {
     private int foodAmount;
