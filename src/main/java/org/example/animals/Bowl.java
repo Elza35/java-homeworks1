@@ -3,24 +3,23 @@ package org.example.animals;
 public class Bowl {
     private int foodAmount;
 
-    public Bowl(int foodAmount) {
-        this.foodAmount = foodAmount;
+    public Bowl(int initialFood) {
+        this.foodAmount = Math.max(initialFood, 0);
     }
 
     public boolean decreaseFood(int amount) {
-        if (amount <= foodAmount) {
+        if (amount > 0 && foodAmount >= amount) {
             foodAmount -= amount;
-            System.out.println("Еда в миске уменьшилась на " + amount + ". Осталось: " + foodAmount);
             return true;
-        } else {
-            System.out.println("Недостаточно еды! В миске: " + foodAmount + ", требуется: " + amount);
-            return false;
         }
+        return false;
     }
 
     public void addFood(int amount) {
-        foodAmount += amount;
-        System.out.println("В миску добавлено " + amount + " еды. Теперь в миске: " + foodAmount);
+        if (amount > 0) {
+            foodAmount += amount;
+            System.out.println("В миску добавлено " + amount + " еды. Теперь в миске: " + foodAmount);
+        }
     }
 
     public int getFoodAmount() {

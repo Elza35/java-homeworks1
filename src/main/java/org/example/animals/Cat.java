@@ -21,15 +21,15 @@ public class Cat extends Animal {
 
     @Override
     public void swim(int distance) {
-        System.out.println(name + " не умеет плавать!");
+        System.out.println(name + " не умеет плавать.");
     }
 
     public void eat(Bowl bowl, int amount) {
         if (bowl.decreaseFood(amount)) {
             this.satiety = true;
-            System.out.println(name + " поел и теперь сыт!");
+            System.out.println(name + " поел из миски и теперь сыт.");
         } else {
-            System.out.println(name + " не смог поесть. В миске недостаточно еды!");
+            System.out.println(name + " не смог поесть. В миске недостаточно еды.");
         }
     }
 
